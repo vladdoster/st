@@ -7,7 +7,7 @@
  */
 static char *font = "SourceCodePro:pixelsize=16:antialias=false:autohint=true";
 static char *font2[] = { "SSourceCodePro:pixelsize=16:antialias=false:autohint=true" };
-static int borderpx = 2;
+static int borderpx = 10;
 
 /*
  * What program is execed by st depends of these precedence rules:
