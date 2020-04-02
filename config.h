@@ -7,7 +7,8 @@
  */
 // static char *font = "SauceCodePro:pixelsize=16:antialias=true:autohint=true";
 // static char *font2[] = { "SauceCodePro:pixelsize=16:antialias=true:autohint=true" };
-static char *font = "Liberation Mono:pixelsize=12:antialias=false:autohint=true";
+static char *font = "Sauce Code Pro:pixelsize=16:antialias=false:autohint=true";
+static char *font2[] = { "Sauce Code Pro:pixelsize=16:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
