@@ -9,7 +9,7 @@
 // static char *font2[] = { "SauceCodePro:pixelsize=16:antialias=true:autohint=true" };
 static char *font = "Liberation Mono:pixelsize=16:antialias=false:autohint=true";
 static char *font2[] = { "Liberation Mono:pixelsize=16:antialias=true:autohint=true" };
-static int borderpx = 2;
+static int borderpx = 1;
 
 /*
  * What program is execed by st depends of these precedence rules:
