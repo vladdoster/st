@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "SauceCodePro Mono:pixelsize=16:antialias=false:autohint=true";
-static char *font2[] = { "SauceCodePro Mono:pixelsize=16:antialias=false:autohint=true" };
+static char *font = "SourceCodePro:pixelsize=16:antialias=false:autohint=true";
+static char *font2[] = { "SSourceCodePro:pixelsize=16:antialias=false:autohint=true" };
 static int borderpx = 1;
 
 /*
