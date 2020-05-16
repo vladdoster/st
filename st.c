@@ -1300,9 +1300,6 @@ tsetchar(Rune u, Glyph *attr, int x, int y)
 	term.dirty[y] = 1;
 	term.line[y][x] = *attr;
 	term.line[y][x].u = u;
-
-	if (isboxdraw(u))
-		term.line[y][x].mode |= ATTR_BOXDRAW;
 }
 
 void
@@ -1948,23 +1945,12 @@ strhandle(void)
 			}
 			return;
 		case 4: /* color set */
-		case 10: /* foreground set */
-		case 11: /* background set */
-		case 12: /* cursor color */
-			if ((par == 4 && narg < 3) || narg < 2)
+			if (narg < 3)
 				break;
-			p = strescseq.args[((par == 4) ? 2 : 1)];
+			p = strescseq.args[2];
 			/* FALLTHROUGH */
 		case 104: /* color reset, here p = NULL */
-			if (par == 10)
-				j = defaultfg;
-			else if (par == 11)
-				j = defaultbg;
-			else if (par == 12)
-				j = defaultcs;
-			else
-				j = (narg > 1) ? atoi(strescseq.args[1]) : -1;
-
+			j = (narg > 1) ? atoi(strescseq.args[1]) : -1;
 			if (xsetcolorname(j, p)) {
 				if (par == 104 && narg <= 1)
 					return; /* color reset without parameter */
@@ -1975,8 +1961,6 @@ strhandle(void)
 				 * TODO if defaultbg color is changed, borders
 				 * are dirty
 				 */
-				if (j == defaultbg)
-					xclearwin();
 				redraw();
 			}
 			return;
