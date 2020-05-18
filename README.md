@@ -11,13 +11,15 @@ This is suckless, the source code is the documentation! Check out [config.h](con
 </div>
 
 ## Patches
-- Vertcenter
-- Scrollback
-- Font2
-- Scrollback with key bindings/mouse wheel/vim bindings
+- Desktop entry: Creates a desktop-entry for st.
+- Vertcenter: Vertically center lines in the space available.
+- Scrollback: Scroll back through terminal output.
+     - Use key bindings/mouse wheel/vim bindings
+- Font2: Allows to add spare font besides default.
 - Zoom/change font size
 - Copy/Paste text
-- New terminal in cwd
+- New term: Spawn a new st terminal with same `cwd` as the original st instance.
+- Right click paste: Pressing right-click pastes from the primary-selection.
 
 ## Unique features (using dmenu)
 - Follow urls: `alt-l`
