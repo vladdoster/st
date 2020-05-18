@@ -14,7 +14,7 @@ This is suckless, the source code is the documentation! Check out [config.h](con
 - Desktop entry: Creates a desktop-entry for st.
 - Vertcenter: Vertically center lines in the space available.
 - Scrollback: Scroll back through terminal output.
-     - Use key bindings/mouse wheel/vim bindings
+     - Use key/vim bindings or mouse wheel
 - Font2: Allows to add spare font besides default.
 - Zoom/change font size
 - Copy/Paste text
